@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Sergio Segovia -- FrontEnd Developer -- @sergiomsl
+
+# THANKS
+
+    Metropoli S.A
+    Efrain
+    Carlos
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+    Bootstrap
