@@ -10,8 +10,8 @@
         <meta name="description" content="Rincón94 es el proyecto alegre de Metropoli. Construido en apartado y fresco sector de Villa Carolina en Barranquilla.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="favicon.ico?v=2">
+
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
@@ -114,22 +114,30 @@
         <div class="row">
             <div class="col-md-6">
                 <ul class="bxslider">
-                  <li><img src="img/aptouno.jpg" alt=""></li>
-                  <li><img src="img/aptodos.jpg" alt=""></li>
+                  <li><img src="img/aptounogrande.jpg" alt=""></li>
+                  <li><img src="img/aptodosgrande.jpg" alt=""></li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <p>Metropoli ha diseñado <br> un rincón para papá, uno para<br> mamá, uno para los hijos, uno<br> para la familia, uno para<br> disfrutar de deliciosas recetas,<br> uno para todos.
-</p>
+            <div class="col-md-6 normal">
+                <p>Metropoli ha diseñado <br> un rincón para papá, uno para<br> mamá, uno para los hijos, uno<br> para la familia, uno para<br> disfrutar de deliciosas recetas,<br> uno para todos.</p>
+            </div>
+            <div class="col-md-6 movil">
+                <p>Metropoli ha diseñado un rincón para papá, uno para mamá, uno para los hijos, uno para la familia, uno para disfrutar de deliciosas recetas, uno para todos.</p>
             </div>
         </div>
     </div>
 
     <div id="ubicacion">
-        <div>
+        <div class="normal">
             <h2>VISITA NUESTRO CENTRO DE VENTAS</h2>
             <div>
                <p>Rincón94 está ubicado en el novedoso y exclusivo sector<br> de Villa Carolina, un lugar apartado y cercano a las frescas<br> brisas del río Magdalena. A 10 minutos de Buenavista.</p> 
+            </div>
+        </div>
+        <div class="movil">
+            <h2>VISITA NUESTRO CENTRO DE VENTAS</h2>
+            <div>
+               <p>Rincón94 está ubicado en el novedoso y exclusivo sector de Villa Carolina, un lugar apartado y cercano a las frescas brisas del río Magdalena. A 10 minutos de Buenavista.</p> 
             </div>
         </div>
     </div>
@@ -144,7 +152,7 @@
             <div id="MainResult"><!-- retrive response Here --></div>
             <div id="MainContent">
 
-            <form role="form" id="MyContactForm" name="MyContactForm" method="post">         
+            <form role="form" id="MyContactForm" name="MyContactForm" method="post" action="CONTACTO.PHP">         
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
                 </div>
@@ -152,7 +160,7 @@
                     <input type="email" class="form-control" id="email" placeholder="Email">
                 </div>                 
                 <div class="form-group">
-                    <input type="number" class="form-control" id="phone" placeholder="Teléfono">
+                    <input type="text" class="form-control" id="phone" name="phone"placeholder="Teléfono">
                 </div>                
                 <div class="form-group">
                     <input type="text" class="form-control" id="subjet" placeholder="Asunto">

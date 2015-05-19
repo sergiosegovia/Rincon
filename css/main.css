@@ -99,6 +99,14 @@ footer p {
 	display: none !important;
 }
 
+.embed-responsive {
+	padding-top: 6em;
+}
+
+.embed-responsive-item {
+	background: #000;
+}
+
 .form-group a {
 	color: #333;
 }
@@ -187,6 +195,7 @@ footer p {
 }
 
 #amenidades {
+	background: #000;
 	color: #fff;
 	padding-top:50px; 
 }
@@ -309,10 +318,28 @@ footer p {
   padding: 1em .5em;
 }
 
+@media (max-width: 450px) {
+	.movil {
+		display: block !important;
+		padding: .5em;
+	}
+	.normal {
+		display: none;
+	}
+
+	#apartamentos > div > div.col-md-6.movil > p {
+		padding: .5em;
+	}
+}
+
 @media (max-width: 768px) {
 	.navbar-brand {
 		width: 3em;
 		margin-left: 1em;
+	}
+
+	#logo {
+		max-width: 140% !important;
 	}
 }
 
@@ -348,6 +375,19 @@ footer p {
 }
 
 @media (max-width: 992px) {
+	#amenidades {
+		background: #D58E3C;
+		text-align: center;
+	}
+
+	#amenidades ul {
+		margin-left: 0 !important;
+	}
+
+	#amenidades .row .col-md-6:nth-child(1) {
+		padding: 0 !important;
+	}
+
 	#contacto > div:nth-child(2) {
 		margin-top: 6em;
 	}
@@ -357,6 +397,29 @@ footer p {
 		margin-top: 40px;
 	}
 }
+
+@media (min-width: 993px) and (max-width: 1198px) {
+	.amenidades h2 {
+		font-size: 1.5em !important;
+		padding-bottom: .5em !important;
+	}
+	.amenidades ul {
+		margin-left: 12em !important;
+	}
+	.amenidades ul li {
+		font-size: 1.2em;
+	}
+	#apartamentos .row {
+		font-size: 1.3em;
+	}
+}
+
+@media (min-width: 1366px) {
+	body {
+		font-size: 20px;
+	}
+}
+
 
 .shrink {
 	width: 2em;
@@ -435,7 +498,13 @@ div#navbar.navbar-collapse.collapse.in {
 	margin: 1em 0 !important;
 }
 
+.movil {
+	display: none;
+}
 
+.logodos {
+	padding-left: .5em;
+}
 
 
 
